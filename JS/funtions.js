@@ -128,3 +128,110 @@ var respuesta =
       html: respuesta
     });
 
+ //operadores lógicos y estructuras condicionales
+ 
+ //and && con if
+
+ // = asignación
+ // == valor
+ // === valor y tipo de dato
+
+ var bool = false;
+ var numeric = 7;
+
+ if(!bool && numeric === 7){//bool == true
+console.log("entra if");
+ } else{
+console.log("entra else");
+ }
+
+//or || con if
+
+var age = 31;
+
+if( age == 32 || numeric === 7){
+   console.log("entra if");
+   age++; //+=n n=incremento
+} else{
+   console.log("entra else");
+   age--;
+}
+console.log(age);
+
+// for 
+console.log(array_text.length);
+var size = array_text.length;
+
+for(let i=0; i<size; i++){
+console.log(array_text[i]+(i+1));
+}
+
+//while
+
+let position = 0;
+
+while(position<size){
+console.log(array_text [position] + (i+1));
+position++;
+}
+
+//do while
+
+let w = 0;
+
+do{
+   console.log(array_text [w] + (i+1));
+   w++;
+}while(w<size)
+
+//eventos y funciones
+
+function load_page(){
+   jm();
+   jm2();
+}
+
+function jm(){
+   alert("bienvenido")
+}
+function jm2(){
+   alert("bienvenido dos")
+}
+
+function box_onblur(){
+   alert("salió");
+}
+
+function box_onblur(){
+   const box_onblur = document.querySelector("#box_onblur");
+   if(box_onblur.ariaValueMax.length <=2){
+      alert("problemas con el texto");
+   }
+}
+
+const btn_change_color = document.querySelector ("#change_color");
+btn_change_color.addEventListener("click", () =>{
+document.body.style.backgroundColor = "red";
+document.body.style.color = "#fff";
+});
+
+
+const form = document.getElementByIdr("form_register");
+const nombres = document.getElementByIdr("nombres");
+const apellidos = document.getElementByIdr("apellidos");
+const validation = document.getElementByIdr("validation");
+
+form.addEventListener("submit", name_event =>{
+name_event.preventDefault();
+let info = "";
+if(nombres.value.length <= 2 || apellidos.value.length <= 2){
+info += "nombres o  pellidos incorrectos";
+validation.style.color = "red";
+}else{
+   info += "su nombre es : " + nombres.value + "" + "su apellido es : " + apellidos.value;
+   validation.style.color = "green";
+
+}
+validation.innerText =  info;
+});
+
