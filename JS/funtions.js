@@ -209,17 +209,17 @@ function box_onblur(){
    }
 }
 
-const btn_change_color = document.querySelector ("#change_color");
+const btn_change_color = document.querySelector("#change_color");
 btn_change_color.addEventListener("click", () =>{
 document.body.style.backgroundColor = "red";
 document.body.style.color = "#fff";
 });
 
 
-const form = document.getElementByIdr("form_register");
-const nombres = document.getElementByIdr("nombres");
-const apellidos = document.getElementByIdr("apellidos");
-const validation = document.getElementByIdr("validation");
+const form = document.getElementById("form_register");
+const nombres = document.getElementById("nombres");
+const apellidos = document.getElementById("apellidos");
+const validation = document.getElementById("validation");
 
 form.addEventListener("submit", name_event =>{
 name_event.preventDefault();
@@ -234,4 +234,26 @@ validation.style.color = "red";
 }
 validation.innerText =  info;
 });
+
+function load_page() {
+
+   document.getElementById("nombres").focus();
+   //focus se abilita cuando carga la pagina
+   document.getElementById("apellidos").disabled = true; //bloquea
+   let date = new Date();
+   console.log(date.getSeconds());
+}
+
+function validate(){
+  let nombres =  document.getElementById("nombres").value;
+  console.log(nombres);
+  alert(nombres.toUpperCase());
+
+  if (nombres.length > 2) {
+   document.getElementById("apellidos").disabled = false;
+   document.getElementById("apellidos").focus();
+   document.getElementById("nombres").value = "";
+
+  } 
+}
 
