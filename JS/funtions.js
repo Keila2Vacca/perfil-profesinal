@@ -38,121 +38,121 @@ document.getElementById("box_two").innerText = "<h1>Keila Vacca</h1>";
 //librerias
 
 Swal.fire({
-    icon: 'info',
-    title: 'Keila Vacca',
-    text: name,
-    footer: name,
-    showConfirmButton: false,
-    timer: 2000,
-    position: 'center-end'
+   icon: 'info',
+   title: 'Keila Vacca',
+   text: name,
+   footer: name,
+   showConfirmButton: false,
+   timer: 2000,
+   position: 'center-end'
 })
- //  Swal.fire(name);
+//  Swal.fire(name);
 
 
- //tipos de datos
+//tipos de datos
 
 
- //numericos
+//numericos
 
- var number_one = 10;
- var number_two = 2.5;
+var number_one = 10;
+var number_two = 2.5;
 
- //String
- var text = "soy un texto";
+//String
+var text = "soy un texto";
 
- //booleanos
+//booleanos
 
- var boolean = true; //false
+var boolean = true; //false
 
- //array
+//array
 
- var array_num =[1, 2, 3, 4, 5, 6];
- var array_text = ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"];
- var array_mix = [1, "a", 2.5 , "c"];
- var array_mul= [
-    {name: "Eliany", last_name:"Navarro", age: "17" },
-    {name: "Maria", last_name:"perez", age: "22" },
-    {name: "Angie", last_name: "Alvarez", age: "23"},
-    {name: "SoFIA", last_name:"Montaguth ", age: "34"},
- ]
-
- 
- //operadores basicos
-
- //suma
- var suma = number_one + number_two;
- console.log("suma = " + suma);
+var array_num = [1, 2, 3, 4, 5, 6];
+var array_text = ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"];
+var array_mix = [1, "a", 2.5, "c"];
+var array_mul = [
+   { name: "Eliany", last_name: "Navarro", age: "17" },
+   { name: "Maria", last_name: "perez", age: "22" },
+   { name: "Angie", last_name: "Alvarez", age: "23" },
+   { name: "SoFIA", last_name: "Montaguth ", age: "34" },
+]
 
 
- //resta
+//operadores basicos
 
- var resta = number_one - number_two;
- console.log("resta = " + resta);
-
- //multiplicacion
- var multiplicacion = number_one * number_two;
- console.log("multiplicacion= " + multiplicacion);
-
- //division
-
- var division = number_one / number_two;
- console.log("division = " + division);
-
- //modulo
-
- var modulo = number_one % number_two;
- console.log("modulo = " + modulo);
+//suma
+var suma = number_one + number_two;
+console.log("suma = " + suma);
 
 
- console.log(
-    "suma = " + suma + " \n"+
-    "resta = " + resta  + " \n"+
-    "multiplicacion= " + multiplicacion  + " \n"+
-    "division = " + division + " \n"+
-    "modulo = " + modulo
- );
-var respuesta = 
-    "suma = " + suma + "<br>"+
-    "resta = " + resta  + "<br>"+
-    "multiplicacion= " + multiplicacion  + "<br>"+
-    "division = " + division + "<br>"+
-    "modulo = " + modulo;
+//resta
 
-    Swal.fire(respuesta);
+var resta = number_one - number_two;
+console.log("resta = " + resta);
 
-    Swal.fire({
-      showConfirmButton: false,
-      background: '#000' ,
-      icon: 'success',
-      title: 'respuesta',
-      html: respuesta
-    });
+//multiplicacion
+var multiplicacion = number_one * number_two;
+console.log("multiplicacion= " + multiplicacion);
 
- //operadores lógicos y estructuras condicionales
- 
- //and && con if
+//division
 
- // = asignación
- // == valor
- // === valor y tipo de dato
+var division = number_one / number_two;
+console.log("division = " + division);
 
- var bool = false;
- var numeric = 7;
+//modulo
 
- if(!bool && numeric === 7){//bool == true
-console.log("entra if");
- } else{
-console.log("entra else");
- }
+var modulo = number_one % number_two;
+console.log("modulo = " + modulo);
+
+
+console.log(
+   "suma = " + suma + " \n" +
+   "resta = " + resta + " \n" +
+   "multiplicacion= " + multiplicacion + " \n" +
+   "division = " + division + " \n" +
+   "modulo = " + modulo
+);
+var respuesta =
+   "suma = " + suma + "<br>" +
+   "resta = " + resta + "<br>" +
+   "multiplicacion= " + multiplicacion + "<br>" +
+   "division = " + division + "<br>" +
+   "modulo = " + modulo;
+
+Swal.fire(respuesta);
+
+Swal.fire({
+   showConfirmButton: false,
+   background: '#000',
+   icon: 'success',
+   title: 'respuesta',
+   html: respuesta
+});
+
+//operadores lógicos y estructuras condicionales
+
+//and && con if
+
+// = asignación
+// == valor
+// === valor y tipo de dato
+
+var bool = false;
+var numeric = 7;
+
+if (!bool && numeric === 7) {//bool == true
+   console.log("entra if");
+} else {
+   console.log("entra else");
+}
 
 //or || con if
 
 var age = 31;
 
-if( age == 32 || numeric === 7){
+if (age == 32 || numeric === 7) {
    console.log("entra if");
    age++; //+=n n=incremento
-} else{
+} else {
    console.log("entra else");
    age--;
 }
@@ -162,57 +162,57 @@ console.log(age);
 console.log(array_text.length);
 var size = array_text.length;
 
-for(let i=0; i<size; i++){
-console.log(array_text[i]+(i+1));
+for (let i = 0; i < size; i++) {
+   console.log(array_text[i] + (i + 1));
 }
 
 //while
 
 let position = 0;
 
-while(position<size){
-console.log(array_text [position] + (i+1));
-position++;
+while (position < size) {
+   console.log(array_text[position] + (i + 1));
+   position++;
 }
 
 //do while
 
 let w = 0;
 
-do{
-   console.log(array_text [w] + (i+1));
+do {
+   console.log(array_text[w] + (i + 1));
    w++;
-}while(w<size)
+} while (w < size)
 
 //eventos y funciones
 
-function load_page(){
+function load_page() {
    jm();
    jm2();
 }
 
-function jm(){
+function jm() {
    alert("bienvenido")
 }
-function jm2(){
+function jm2() {
    alert("bienvenido dos")
 }
 
-function box_onblur(){
+function box_onblur() {
    alert("salió");
 }
 
-function box_onblur(){
+function box_onblur() {
    const box_onblur = document.querySelector("#box_onblur");
-   if(box_onblur.ariaValueMax.length <=2){
+   if (box_onblur.ariaValueMax.length <= 2) {
       alert("problemas con el texto");
    }
 }
 
 const btn_change_color = document.querySelector("#change_color");
-btn_change_color.addEventListener("click", () =>{
-document.body.style.backgroundColor = "red";
-document.body.style.color = "#fff";
+btn_change_color.addEventListener("click", () => {
+   document.body.style.backgroundColor = "red";
+   document.body.style.color = "#fff";
 });
 
 
@@ -221,19 +221,20 @@ const nombres = document.getElementById("nombres");
 const apellidos = document.getElementById("apellidos");
 const validation = document.getElementById("validation");
 
-form.addEventListener("submit", name_event =>{
-name_event.preventDefault();
-let info = "";
-if(nombres.value.length <= 2 || apellidos.value.length <= 2){
-info += "nombres o  pellidos incorrectos";
-validation.style.color = "red";
-}else{
-   info += "su nombre es : " + nombres.value + "" + "su apellido es : " + apellidos.value;
-   validation.style.color = "green";
+form.addEventListener("submit", name_event => {
+   name_event.preventDefault();
+   let info = "";
+   if (nombres.value.length <= 2 || apellidos.value.length <= 2) {
+      info += "nombres o  pellidos incorrectos";
+      validation.style.color = "red";
+   } else {
+      info += "su nombre es : " + nombres.value + "" + "su apellido es : " + apellidos.value;
+      validation.style.color = "green";
 
-}
-validation.innerText =  info;
+   }
+   validation.innerText = info;
 });
+
 
 function load_page() {
 
@@ -242,18 +243,25 @@ function load_page() {
    document.getElementById("apellidos").disabled = true; //bloquea
    let date = new Date();
    console.log(date.getSeconds());
+   let info = " ";
+   for (let i = 0; i < array_mul.length; i++) {
+      //console.log("nombre :"+array_mul[i].name+"apellido :"+array_mul[i].last_name+"edad :"+array_mul[i].age);
+      //info += "nombre :"+array_mul[i].name+"apellido :"+array_mul[i].last_name+"edad :"+array_mul[i].age + "<br>";
+      info += "<tr><td>" + array_mul[i].name + "</td>" + "<td>" + array_mul[i].last_name + "</td>" + "<td>" + array_mul[i].age + "</td></tr>";
+   }
+   document.getElementById("imprimir_datos").innerHTML = info;
 }
 
-function validate(){
-  let nombres =  document.getElementById("nombres").value;
-  console.log(nombres);
-  alert(nombres.toUpperCase());
+function validate() {
+   let nombres = document.getElementById("nombres").value;
+   console.log(nombres);
+   alert(nombres.toUpperCase());
 
-  if (nombres.length > 2) {
-   document.getElementById("apellidos").disabled = false;
-   document.getElementById("apellidos").focus();
-   document.getElementById("nombres").value = "";
+   if (nombres.length > 2) {
+      document.getElementById("apellidos").disabled = false;
+      document.getElementById("apellidos").focus();
+      document.getElementById("nombres").value = "";
 
-  } 
+   }
 }
 
