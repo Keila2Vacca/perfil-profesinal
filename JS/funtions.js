@@ -1,4 +1,4 @@
-console.log("prueba de conecciñon");
+console.log("prueba de conexión");
 
 //tipos de variables
 //const para variables constantes
@@ -73,7 +73,7 @@ var array_mul = [
    { name: "Eliany", last_name: "Navarro", age: "17" },
    { name: "Maria", last_name: "perez", age: "22" },
    { name: "Angie", last_name: "Alvarez", age: "23" },
-   { name: "SoFIA", last_name: "Montaguth ", age: "34" },
+   { name: "Sofía", last_name: "Montaguth ", age: "34" },
 ]
 
 
@@ -209,10 +209,11 @@ function box_onblur() {
    }
 }
 
-const btn_change_color = document.querySelector("#change_color");
-btn_change_color.addEventListener("click", () => {
-   document.body.style.backgroundColor = "red";
-   document.body.style.color = "#fff";
+const btn_changeColor = document.querySelector("#change_color");
+
+btn_changeColor.addEventListener("click",() => {
+    document.body.style.backgroundColor = "red";
+    document.body.style.color= "#fff";
 });
 
 
@@ -264,4 +265,5 @@ function validate() {
 
    }
 }
+
 
